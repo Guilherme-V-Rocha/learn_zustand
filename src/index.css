@@ -25,9 +25,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  max-width: 100dvw;
+  min-height: 100dvh;
+  flex-direction: column;
 }
 
 h1 {
@@ -65,4 +65,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.products {
+  justify-self: center;
+  align-self: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    column-gap: 1rem;
+  }
+}
+
+.products-total {
+  justify-self: center;
+}
+
+.cart-products {
+  justify-self: center;
 }
