@@ -12,10 +12,10 @@ export const Cart = () => {
     <div>
       <h1 className="cart-products">Cart Products</h1>
       <ul>
-        {items.map((item) => (
-          <li key={item.id}>
+        {items.map((item, index) => (
+          <li key={index}>
             {item.name} - {formatter.format(item.price)}
-            <button onClick={() => removeFromCart(item.id)}>
+            <button onClick={() => removeFromCart(index)}>
               Remove to cart
             </button>
           </li>
